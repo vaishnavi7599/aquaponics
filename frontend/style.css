@@ -1,0 +1,114 @@
+* {
+    margin: 0;    /* Fixed typo: 'mragin' to 'margin' */
+    padding: 0;
+}
+
+.select {
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.container {
+    background: rgba(60, 60, 60, 0.8);  /* Made background slightly more opaque */
+    padding: 2rem;
+    border-radius: 1rem;
+    border: solid 1px #fff;  /* Added color to border */
+    min-height: 45vh;
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 80vh;
+    overflow-y: auto;  /* Added scrolling for small screens */
+}
+
+body {
+    font-family: Roboto, Arial;
+    background-image: url("https://agrierp.com/blog/wp-content/uploads/2022/10/Aquaponics-vs-Hydroponics.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    color: #fff;  /* Added text color */
+}
+
+#h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.dropdown {
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.entries {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 100%;
+    max-height: 50vh;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.entries div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entries input {
+    width: 120px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#b1 {
+    background-color: white;
+    color: rgb(255, 0, 0);
+    border-color: rgb(0, 140, 255);
+    border-width: 1px;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+#b1:hover {
+    background-color: rgb(129, 165, 43);
+    color: #ffffff;    
+}
+
+#b1:active {
+    opacity: 0.7;
+}
+
+.entries {
+    color: aquamarine;
+}
+
+.result {
+    background-color: bisque;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
+}
+
+.result p {
+    margin: 5px 0;
+    font-weight: bold;
+}

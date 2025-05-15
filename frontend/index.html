@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Yield Predictor</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <h2 id="h2">Predict Your Crop Yield</h2>
+        <form id="predict-form" onsubmit="event.preventDefault(); predict();">
+            <div class="dropdown">
+                <p>Select Location</p>
+                <select name="location" class="select" id="selected" onchange="myFunction()">
+                    <option disabled selected value="">Choose Location</option>
+                    <option value="0">A</option>
+                    <option value="1">B</option>
+                    <option value="2">C</option>
+                </select>
+            </div> 
+        
+            <div class="entries">
+                <div class="calcium">
+                    <p>Calcium:</p><input type="number" step="0.01" placeholder="e.g., 160.81">
+                </div>
+                <div class="magnesium">
+                    <p>Magnesium:</p><input type="number" step="0.01" placeholder="e.g., 643.29">
+                </div>
+                <div class="sodium">
+                    <p>Sodium:</p><input type="number" step="0.01" placeholder="e.g., 866.06">
+                </div>
+                <div class="potassium">
+                    <p>Potassium:</p><input type="number" step="0.01" placeholder="e.g., 615.22">
+                </div>
+                <div class="boron">
+                    <p>Boron:</p><input type="number" step="0.01" placeholder="e.g., 399.00">
+                </div>
+                <div class="carbonate">
+                    <p>Carbonate:</p><input type="number" step="0.01" placeholder="e.g., 476.05">
+                </div>
+                <div class="bicarbonate">
+                    <p>Bicarbonate:</p><input type="number" step="0.01" placeholder="e.g., 955.65">
+                </div>
+                <div class="sulphate">
+                    <p>Sulphate:</p><input type="number" step="0.01" placeholder="e.g., 39.62">
+                </div>
+                <div class="chloride">
+                    <p>Chloride:</p><input type="number" step="0.01" placeholder="e.g., 965.12">
+                </div>
+                <div class="nitrates">
+                    <p>Nitrate:</p><input type="number" step="0.01" placeholder="e.g., 641.97">
+                </div>
+                <div class="ph">
+                    <p>pH:</p><input type="number" step="0.01" placeholder="e.g., 8.37">
+                </div>
+                <div class="conductivity">
+                    <p>Conductivity:</p><input type="number" step="0.01" placeholder="e.g., 1946.81">
+                </div>
+                <div class="hard1">
+                    <p>Hardness 1:</p><input type="number" step="0.01" placeholder="e.g., 284.58">
+                </div>
+                <div class="hard2">
+                    <p>Hardness 2:</p><input type="number" step="0.01" placeholder="e.g., 142.26">
+                </div>
+                <div class="alkalinity">
+                    <p>Alkalinity:</p><input type="number" step="0.01" placeholder="e.g., 218.90">
+                </div>
+                <div class="tds">
+                    <p>Total dissolved salts:</p><input type="number" step="0.01" placeholder="e.g., 194.83">
+                </div>
+                <div class="sar">
+                    <p>SAR:</p><input type="number" step="0.01" placeholder="e.g., 3.34">
+                </div>
+            </div>
+            <br>
+            <div class="button">
+                <button type="submit" id="b1">Predict</button>
+            </div>
+        </form>
+        <br><br>
+        <div class="result">
+            <p id="res"></p>
+            <p id="resm"></p>
+        </div>
+    </div>
+    
+    <script src="text.js"></script>  
+</body>
+</html>
